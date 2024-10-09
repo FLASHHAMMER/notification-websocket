@@ -1,0 +1,15 @@
+server:
+  port: 3007
+
+scheduler:
+  cron:
+    checkNotifications:
+      cronExpression: 0/7 * * * * *
+      type: Chequeo de notificaciones periodico.
+
+logging:
+  level:
+    root: ERROR
+    org.springframework.web: ERROR
+    org.hibernate: ERROR
+    com.flashhammer: DEBUG
